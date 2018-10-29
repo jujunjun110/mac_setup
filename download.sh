@@ -4,9 +4,6 @@ function command_exists {
   command -v "$1" > /dev/null;
 }
 
-#
-# Install homebrew.
-#
 if ! command_exists brew ; then
   echo " --------- Homebrew ----------"
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -16,9 +13,6 @@ if ! command_exists brew ; then
   echo " ------------ END ------------"
 fi
 
-#
-# Install git
-#
 if ! command_exists git ; then
   echo " ------------ Git ------------"
   brew install git
@@ -26,9 +20,10 @@ if ! command_exists git ; then
   echo " ------------ END ------------"
 fi
 
-#
-# mac-auto-setup.git
-#
-# echo " ---- mac-auto-setup.git -----"
-# git clone https://github.com/AkkeyLab/mac-auto-setup.git
-# echo " ------------ END ------------"
+if ! command_exists mas ; then
+  echo " ------------ Mas ------------"
+  brew install mas
+  echo " ------------ END ------------"
+fi
+
+
