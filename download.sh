@@ -26,4 +26,6 @@ if ! command_exists mas ; then
   echo " ------------ END ------------"
 fi
 
+brew cask install iterm2
+brew cask install google-chrome
 
