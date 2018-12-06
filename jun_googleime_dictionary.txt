@@ -1,0 +1,23 @@
+pc	jujunjun110@gmail.com	名詞	
+pc	jun_ito@voyagegroup.com	名詞	
+tw	jujunjun110	名詞	
+vg	VOYAGE GROUP	名詞	
+vg	株式会社VOYAGE GROUP	名詞	
+
+()	【】	名詞	
+br	<br>	名詞	
+
+hs	★	名詞	
+sk	◆	名詞	
+mr	●	名詞	
+st	↓	名詞	
+hd	←	名詞	
+mg	→	名詞	
+yj	⇔	名詞	
+
+wr	笑	名詞	
+yr	よろしくお願いします	名詞	
+yrs	よろしくお願いいたします	名詞	
+あr	ありがとうございます	名詞	
+あrt	ありがとうございました	名詞	
+おs	いつもお世話になっております。VOYAGE GROUPの伊藤です。	名詞	
