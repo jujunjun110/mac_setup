@@ -70,9 +70,13 @@ defaults write com.apple.dock magnification -bool false
 
 defaults write -g com.apple.trackpad.scaling 6
 
-mkdir -p ~/.config
+mkdir -p ~/.config/karabiner
 
-cp -r $(PWD)/dotfiles/.* ~/
+cp $(PWD)/dotfiles/.gitconfig ~/
+cp $(PWD)/dotfiles/.vimrc ~/
+cp $(PWD)/dotfiles/.zshrc ~/
+cp -r $(PWD)/dotfiles/.vim ~/
+
 cp $(PWD)/karabiner.json ~/.config/karabiner/karabiner.json
 echo zsh > ~/.bash_profile
 zsh
