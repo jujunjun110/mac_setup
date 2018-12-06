@@ -246,7 +246,7 @@
                 }, {
                     "conditions": [{ "name": "lang_modifier", "type": "variable_if", "value": 1 }],
                     "from": { "key_code": "h" },
-                    "to": [{ "mouse_key": { "x": -20000 } }],
+                    "to": [{ "mouse_key": { "x": -2000 } }],
                     "type": "basic"
                 }, {
                     "conditions": [{ "name": "lang_modifier", "type": "variable_if", "value": 1 }],
