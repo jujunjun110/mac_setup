@@ -60,7 +60,7 @@ mas install 539883307 # LINE
 mas install 409183694 # Keynote
 
 # Automatically hide or show the Dock （Dock を自動的に隠す）
-defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide -bool false
 # Wipe all app icons from the Dock （Dock に標準で入っている全てのアプリを消す、Finder とごみ箱は消えない）
 defaults write com.apple.dock persistent-apps -array
 # Set the icon size （アイコンサイズの設定）
