@@ -44,6 +44,7 @@ brew_install_if_not_exists nodenv
 brew_install_if_not_exists goenv
 
 cask_install_if_not_exists sketch
+cask_install_if_not_exists clipy
 cask_install_if_not_exists franz
 cask_install_if_not_exists dropbox
 cask_install_if_not_exists karabiner-elements
@@ -70,9 +71,10 @@ defaults write com.apple.dock magnification -bool false
 defaults write -g com.apple.trackpad.scaling 6
 
 mkdir -p ~/.config
-cp $(PWD)/.zshrc ~/
-cp $(PWD)/.vimrc ~/
-cp $(PWD)/.gitconfig ~/
+cp $(PWD)/dotfiles/.zshrc ~/
+cp $(PWD)/dotfiles/.vimrc ~/
+cp $(PWD)/dotfiles/.gitconfig ~/
+cp -r $(PWD)/dotfiles/.vim ~/
 cp $(PWD)/karabiner.json ~/.config/karabiner/karabiner.json
 echo zsh > ~/.bash_profile
 zsh
