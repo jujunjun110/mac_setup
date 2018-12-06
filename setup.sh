@@ -69,6 +69,8 @@ defaults write com.apple.dock tilesize -int 50
 defaults write com.apple.dock magnification -bool false
 
 defaults write -g com.apple.trackpad.scaling 6
+defaults write -g KeyRepeat -int 1
+defaults write -g InitialKeyRepeat -int 5
 
 mkdir -p ~/.config/karabiner
 
