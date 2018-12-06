@@ -7,24 +7,24 @@ function cask_installed {
 }
 
 function brew_install_if_not_exists {
-if ! command_exists $1 ; then
-  echo " ------------ $1 ------------"
-  brew install $1
-  $1 --version
-  echo " ------------ END ------------"
-else 
-  echo "$1 already installed."
-fi
+  if ! command_exists $1 ; then
+    echo " ------------ $1 ------------"
+    brew install $1
+    $1 --version
+    echo " ------------ END ------------"
+  else 
+    echo "$1 already installed."
+  fi
 }
 
 function cask_install_if_not_exists {
-if ! cask_installed $1 ; then
-  echo " ------------ $1 ------------"
-  brew cask install $1
-  echo " ------------ END ------------"
-else 
-  echo "$1 already installed."
-fi
+  if ! cask_installed $1 ; then
+    echo " ------------ $1 ------------"
+    brew cask install $1
+    echo " ------------ END ------------"
+  else 
+    echo "$1 already installed."
+  fi
 }
 
 if ! command_exists brew ; then
@@ -38,22 +38,26 @@ fi
 
 brew_install_if_not_exists git
 brew_install_if_not_exists mas
+brew_install_if_not_exists zsh
+
 brew_install_if_not_exists pyenv
 brew_install_if_not_exists rbenv
 brew_install_if_not_exists nodenv
 brew_install_if_not_exists goenv
 brew_install_if_not_exists pipenv
 
+brew_install_if_not_exists tree
+
+
+cask_install_if_not_exists google-chrome
+cask_install_if_not_exists google-japanese-ime
+cask_install_if_not_exists franz
+cask_install_if_not_exists microsoft-office
 
 cask_install_if_not_exists sublime-text
 cask_install_if_not_exists iterm2
-cask_install_if_not_exists google-chrome
-cask_install_if_not_exists google-japanese-ime
-cask_install_if_not_exists microsoft-office
-
 cask_install_if_not_exists unity
 cask_install_if_not_exists sketch
-cask_install_if_not_exists franz
 cask_install_if_not_exists dropbox
 
 cask_install_if_not_exists clipy
