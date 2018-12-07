@@ -69,6 +69,7 @@ cask_install_if_not_exists karabiner-elements
 cask_install_if_not_exists alfred
 cask_install_if_not_exists bettertouchtool
 
+mas install 497799835 # Xcode
 mas install 539883307 # LINE
 mas install 409183694 # Keynote
 mas install 668208984 # GIPHY
