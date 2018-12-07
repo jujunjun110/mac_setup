@@ -59,7 +59,7 @@ cask_install_if_not_exists franz
 
 cask_install_if_not_exists sublime-text
 cask_install_if_not_exists iterm2
-cask_install_if_not_exists unity
+cask_install_if_not_exists unity-hub
 cask_install_if_not_exists sketch
 cask_install_if_not_exists blender
 cask_install_if_not_exists dropbox
