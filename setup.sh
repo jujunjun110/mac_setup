@@ -47,17 +47,19 @@ brew_install_if_not_exists goenv
 brew_install_if_not_exists pipenv
 
 brew_install_if_not_exists tree
-
+brew_install_if_not_exists rails
+brew_install_if_not_exists docker
 
 cask_install_if_not_exists google-chrome
+cask_install_if_not_exists firefox
 cask_install_if_not_exists google-japanese-ime
 cask_install_if_not_exists franz
-cask_install_if_not_exists microsoft-office
 
 cask_install_if_not_exists sublime-text
 cask_install_if_not_exists iterm2
 cask_install_if_not_exists unity
 cask_install_if_not_exists sketch
+cask_install_if_not_exists blender
 cask_install_if_not_exists dropbox
 
 cask_install_if_not_exists clipy
@@ -67,6 +69,12 @@ cask_install_if_not_exists bettertouchtool
 
 mas install 539883307 # LINE
 mas install 409183694 # Keynote
+mas install 668208984 # GIPHY
+
+pyenv install $(pyenv install -l | grep -v - | tail -1)
+pyenv global $(pyenv install -l | grep -v - | tail -1)
+rbenv install $(rbenv install -l | grep -v - | tail -1)
+rbenv global $(rbenv install -l | grep -v - | tail -1)
 
 defaults write com.apple.dock autohide -bool false
 defaults write com.apple.dock persistent-apps -array
@@ -74,8 +82,8 @@ defaults write com.apple.dock tilesize -int 50
 defaults write com.apple.dock magnification -bool false
 
 defaults write -g com.apple.trackpad.scaling 6
-defaults write -g KeyRepeat -int 1
-defaults write -g InitialKeyRepeat -int 5
+defaults write -g KeyRepeat -int 2
+defaults write -g InitialKeyRepeat -int 30
 
 cp -r $(PWD)/dotfiles/.vim ~/
 cp $(PWD)/dotfiles/.vimrc ~/
