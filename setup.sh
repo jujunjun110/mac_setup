@@ -7,24 +7,26 @@ function cask_installed {
 }
 
 function brew_install_if_not_exists {
-  if ! command_exists $1 ; then
-    echo " ------------ $1 ------------"
-    brew install $1
-    $1 --version
-    echo " ------------ END ------------"
-  else 
+  if command_exists $1 ; then
     echo "$1 already installed."
+    return 
   fi
+
+  echo " ------------ $1 ------------"
+  brew install $1
+  $1 --version
+  echo " ------------ END ------------"
 }
 
 function cask_install_if_not_exists {
-  if ! cask_installed $1 ; then
-    echo " ------------ $1 ------------"
-    brew cask install $1
-    echo " ------------ END ------------"
-  else 
+  if cask_installed $1 ; then
     echo "$1 already installed."
+    return
   fi
+
+  echo " ------------ $1 ------------"
+  brew cask install $1
+  echo " ------------ END ------------"
 }
 
 if ! command_exists brew ; then
@@ -71,9 +73,9 @@ mas install 539883307 # LINE
 mas install 409183694 # Keynote
 mas install 668208984 # GIPHY
 
-pyenv install $(pyenv install -l | grep -v - | tail -1)
+# pyenv install $(pyenv install -l | grep -v - | tail -1)
 pyenv global $(pyenv install -l | grep -v - | tail -1)
-rbenv install $(rbenv install -l | grep -v - | tail -1)
+# rbenv install $(rbenv install -l | grep -v - | tail -1)
 rbenv global $(rbenv install -l | grep -v - | tail -1)
 
 defaults write com.apple.dock autohide -bool false
