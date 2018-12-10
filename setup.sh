@@ -84,6 +84,7 @@ defaults write com.apple.dock autohide -bool false
 defaults write com.apple.dock persistent-apps -array
 defaults write com.apple.dock tilesize -int 50
 defaults write com.apple.dock magnification -bool false
+killall Dock
 
 defaults write -g com.apple.trackpad.scaling 6
 defaults write -g KeyRepeat -int 2
