@@ -74,6 +74,7 @@ mas install 497799835 # Xcode
 mas install 539883307 # LINE
 mas install 409183694 # Keynote
 mas install 668208984 # GIPHY
+mas install 915542151 # Monity
 
 # pyenv install $(pyenv install -l | grep -v - | tail -1)
 pyenv global $(pyenv install -l | grep -v - | tail -1)
