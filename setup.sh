@@ -7,7 +7,7 @@ function cask_installed {
   ls /usr/local/Caskroom/ | grep -sq $1;
 }
 
-function brew_install_if_not_exists {
+function brew_install_if_not_installed {
   if command_exists $1 ; then
     echo "$1 already installed."
     return 
@@ -19,7 +19,7 @@ function brew_install_if_not_exists {
   echo " ------------ END ------------"
 }
 
-function cask_install_if_not_exists {
+function cask_install_if_not_installed {
   if cask_installed $1 ; then
     echo "$1 already installed."
     return
@@ -39,37 +39,37 @@ if ! command_exists brew ; then
   echo " ------------ END ------------"
 fi
 
-brew_install_if_not_exists git
-brew_install_if_not_exists mas
-brew_install_if_not_exists zsh
+brew_install_if_not_installed git
+brew_install_if_not_installed mas
+brew_install_if_not_installed zsh
 
-brew_install_if_not_exists pyenv
-brew_install_if_not_exists rbenv
-brew_install_if_not_exists nodenv
-brew_install_if_not_exists goenv
-brew_install_if_not_exists pipenv
+brew_install_if_not_installed pyenv
+brew_install_if_not_installed rbenv
+brew_install_if_not_installed nodenv
+brew_install_if_not_installed goenv
+brew_install_if_not_installed pipenv
 
-brew_install_if_not_exists tree
-brew_install_if_not_exists rails
-brew_install_if_not_exists docker
+brew_install_if_not_installed tree
+brew_install_if_not_installed rails
+brew_install_if_not_installed docker
 
-cask_install_if_not_exists google-chrome
-cask_install_if_not_exists firefox
-cask_install_if_not_exists google-japanese-ime
-cask_install_if_not_exists franz
+cask_install_if_not_installed google-chrome
+cask_install_if_not_installed firefox
+cask_install_if_not_installed google-japanese-ime
+cask_install_if_not_installed franz
 
-cask_install_if_not_exists sublime-text
-cask_install_if_not_exists iterm2
-cask_install_if_not_exists unity-hub
-cask_install_if_not_exists sketch
-cask_install_if_not_exists blender
-cask_install_if_not_exists dropbox
-cask_install_if_not_exists openoffice
+cask_install_if_not_installed sublime-text
+cask_install_if_not_installed iterm2
+cask_install_if_not_installed unity-hub
+cask_install_if_not_installed sketch
+cask_install_if_not_installed blender
+cask_install_if_not_installed dropbox
+cask_install_if_not_installed openoffice
 
-cask_install_if_not_exists clipy
-cask_install_if_not_exists karabiner-elements
-cask_install_if_not_exists alfred
-cask_install_if_not_exists bettertouchtool
+cask_install_if_not_installed clipy
+cask_install_if_not_installed karabiner-elements
+cask_install_if_not_installed alfred
+cask_install_if_not_installed bettertouchtool
 
 mas install 497799835 # Xcode
 mas install 539883307 # LINE
