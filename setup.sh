@@ -63,6 +63,7 @@ cask_install_if_not_exists unity-hub
 cask_install_if_not_exists sketch
 cask_install_if_not_exists blender
 cask_install_if_not_exists dropbox
+cask_install_if_not_exists openoffice
 
 cask_install_if_not_exists clipy
 cask_install_if_not_exists karabiner-elements
