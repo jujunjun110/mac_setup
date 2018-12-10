@@ -77,7 +77,6 @@ mas install 409183694 # Keynote
 mas install 668208984 # GIPHY
 mas install 915542151 # Monity
 
-
 if !(which python | grep -sq shims); then
   pyenv install $(pyenv install -l | grep -v - | tail -1)
   pyenv global $(pyenv install -l | grep -v - | tail -1)
@@ -94,7 +93,6 @@ defaults write com.apple.dock autohide -bool false
 defaults write com.apple.dock persistent-apps -array
 defaults write com.apple.dock tilesize -int 50
 defaults write com.apple.dock magnification -bool false
-killall Dock
 
 defaults write -g com.apple.trackpad.scaling 6
 defaults write -g KeyRepeat -int 2
