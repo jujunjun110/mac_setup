@@ -3,7 +3,8 @@ function command_exists {
 }
 
 function cask_installed {
-  ls /usr/local/Caskroom/ | grep $1 > /dev/null;
+  # ls /usr/local/Caskroom/ | grep $1 > /dev/null;
+  ls /usr/local/Caskroom/ | grep -sq $1;
 }
 
 function brew_install_if_not_exists {
@@ -76,10 +77,18 @@ mas install 409183694 # Keynote
 mas install 668208984 # GIPHY
 mas install 915542151 # Monity
 
-# pyenv install $(pyenv install -l | grep -v - | tail -1)
-pyenv global $(pyenv install -l | grep -v - | tail -1)
-# rbenv install $(rbenv install -l | grep -v - | tail -1)
-rbenv global $(rbenv install -l | grep -v - | tail -1)
+
+if !(which python | grep -sq shims); then
+  pyenv install $(pyenv install -l | grep -v - | tail -1)
+  pyenv global $(pyenv install -l | grep -v - | tail -1)
+  pyenv rehash
+fi
+
+if !(which ruby | grep -sq shims); then
+  rbenv install $(rbenv install -l | grep -v - | tail -1)
+  rbenv global $(rbenv install -l | grep -v - | tail -1)
+  rbenv rehash
+fi
 
 defaults write com.apple.dock autohide -bool false
 defaults write com.apple.dock persistent-apps -array
