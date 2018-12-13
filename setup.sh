@@ -50,6 +50,7 @@ brew_install_if_not_installed goenv
 brew_install_if_not_installed pipenv
 
 brew_install_if_not_installed tree
+brew_install_if_not_installed colordiff
 brew_install_if_not_installed rails
 brew_install_if_not_installed docker
 
@@ -66,6 +67,7 @@ cask_install_if_not_installed blender
 cask_install_if_not_installed dropbox
 cask_install_if_not_installed openoffice
 
+cask_install_if_not_installed google-backup-and-sync
 cask_install_if_not_installed clipy
 cask_install_if_not_installed karabiner-elements
 cask_install_if_not_installed alfred
