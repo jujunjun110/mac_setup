@@ -69,6 +69,7 @@ cask_install_if_not_installed openoffice
 
 cask_install_if_not_installed google-backup-and-sync
 cask_install_if_not_installed clipy
+cask_install_if_not_installed keycastr
 cask_install_if_not_installed karabiner-elements
 cask_install_if_not_installed alfred
 cask_install_if_not_installed bettertouchtool
