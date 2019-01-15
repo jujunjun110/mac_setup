@@ -53,6 +53,7 @@ brew_install_if_not_installed tree
 brew_install_if_not_installed colordiff
 brew_install_if_not_installed rails
 brew_install_if_not_installed docker
+brew_install_if_not_installed gibo
 
 cask_install_if_not_installed google-chrome
 cask_install_if_not_installed firefox
