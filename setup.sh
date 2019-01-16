@@ -77,6 +77,7 @@ cask_install_if_not_installed karabiner-elements
 cask_install_if_not_installed alfred
 cask_install_if_not_installed bettertouchtool
 cask_install_if_not_installed visual-studio-code
+cask_install_if_not_installed dotnet
 
 mas install 497799835 # Xcode
 mas install 539883307 # LINE
