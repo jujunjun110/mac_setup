@@ -97,6 +97,7 @@ if !(which ruby | grep -sq shims); then
   rbenv rehash
 fi
 
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 defaults write com.apple.dock autohide -bool false
 defaults write com.apple.dock persistent-apps -array
 defaults write com.apple.dock tilesize -int 50
