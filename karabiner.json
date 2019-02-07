@@ -50,7 +50,7 @@
                     "type": "basic"
                 }, {
                     "from": {
-                        "pointing_button": "button9",
+                        "pointing_button": "button9"
                     },
                     "to": [{
                         "key_code": "down_arrow"
