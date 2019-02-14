@@ -56,6 +56,7 @@ brew_install_if_not_installed docker
 brew_install_if_not_installed gibo
 brew_install_if_not_installed mono
 brew_install_if_not_installed openssl
+brew_install_if_not_installed mysql
 
 cask_install_if_not_installed google-chrome
 cask_install_if_not_installed firefox
@@ -79,11 +80,11 @@ cask_install_if_not_installed bettertouchtool
 cask_install_if_not_installed visual-studio-code
 cask_install_if_not_installed dotnet
 
- mas install 497799835 # Xcode
- mas install 539883307 # LINE
- mas install 409183694 # Keynote
- mas install 668208984 # GIPHY
- mas install 915542151 # Monity
+mas install 497799835 # Xcode
+as install 539883307 # LINE
+mas install 409183694 # Keynote
+mas install 668208984 # GIPHY
+mas install 915542151 # Monity
  
 if !(which python | grep -sq shims); then
   pyenv install $(pyenv install -l | grep -v - | tail -1)
