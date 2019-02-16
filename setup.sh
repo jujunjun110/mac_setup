@@ -56,6 +56,7 @@ brew_install_if_not_installed gibo
 brew_install_if_not_installed mono
 brew_install_if_not_installed openssl
 brew_install_if_not_installed mysql
+brew_install_if_not_installed hub
 
 cask_install_if_not_installed google-chrome
 cask_install_if_not_installed firefox
