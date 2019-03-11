@@ -71,6 +71,7 @@ cask_install_if_not_installed blender
 cask_install_if_not_installed dropbox
 cask_install_if_not_installed openoffice
 cask_install_if_not_installed docker
+cask_install_if_not_installed microsoft-office
 
 cask_install_if_not_installed google-backup-and-sync
 cask_install_if_not_installed clipy
