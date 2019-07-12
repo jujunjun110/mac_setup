@@ -83,7 +83,7 @@ cask_install_if_not_installed visual-studio-code
 cask_install_if_not_installed dotnet
 
 mas install 497799835 # Xcode
-as install 539883307 # LINE
+mas install 539883307 # LINE
 mas install 409183694 # Keynote
 mas install 668208984 # GIPHY
 mas install 915542151 # Monity
