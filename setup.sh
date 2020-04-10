@@ -103,7 +103,7 @@ cask_install_if_not_installed unity-hub
 cask_install_if_not_installed sketch
 cask_install_if_not_installed docker
 cask_install_if_not_installed dropbox
-cask_install_if_not_installed google-backup-and-sync
+cask_install_if_not_installed google-drive-file-stream
 cask_install_if_not_installed visual-studio-code
 
 mas install 497799835 # Xcode
