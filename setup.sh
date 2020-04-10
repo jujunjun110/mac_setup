@@ -61,24 +61,28 @@ cp $(PWD)/karabiner.json ~/.config/karabiner/karabiner.json
 echo zsh > ~/.bash_profile
 zsh
 
+# essential cli
 brew_install_if_not_installed git
 brew_install_if_not_installed mas
 brew_install_if_not_installed zsh
 cask_install_if_not_installed iterm2
 
+# productivity tools
 cask_install_if_not_installed keycastr
 cask_install_if_not_installed karabiner-elements
 cask_install_if_not_installed alfred
 cask_install_if_not_installed bettertouchtool
 cask_install_if_not_installed clipy
+cask_install_if_not_installed google-japanese-ime
 
+# main gui tools
 cask_install_if_not_installed sublime-text
 cask_install_if_not_installed google-chrome
 cask_install_if_not_installed firefox
-cask_install_if_not_installed google-japanese-ime
 cask_install_if_not_installed franz
 cask_install_if_not_installed zoomus
 
+# sub cli tools
 brew_install_if_not_installed tree
 brew_install_if_not_installed colordiff
 brew_install_if_not_installed rails
@@ -88,10 +92,7 @@ brew_install_if_not_installed openssl
 brew_install_if_not_installed mysql
 brew_install_if_not_installed hub
 
-cask_install_if_not_installed dropbox
-cask_install_if_not_installed google-backup-and-sync
-cask_install_if_not_installed visual-studio-code
-
+# heavy languages/tools
 cask_install_if_not_installed dotnet
 brew_install_if_not_installed pyenv
 brew_install_if_not_installed rbenv
@@ -102,6 +103,9 @@ cask_install_if_not_installed blender
 cask_install_if_not_installed unity-hub
 cask_install_if_not_installed sketch
 cask_install_if_not_installed docker
+cask_install_if_not_installed dropbox
+cask_install_if_not_installed google-backup-and-sync
+cask_install_if_not_installed visual-studio-code
 
 mas install 497799835 # Xcode
 mas install 539883307 # LINE
