@@ -77,7 +77,7 @@ cask_install_if_not_installed google-chrome
 cask_install_if_not_installed firefox
 cask_install_if_not_installed google-japanese-ime
 cask_install_if_not_installed franz
-cask_install_if_not_installed microsoft-office
+cask_install_if_not_installed zoomus
 
 brew_install_if_not_installed tree
 brew_install_if_not_installed colordiff
