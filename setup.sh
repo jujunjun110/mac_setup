@@ -59,7 +59,6 @@ mkdir -p ~/.config/karabiner
 cp $(PWD)/karabiner.json ~/.config/karabiner/karabiner.json
 
 echo zsh > ~/.bash_profile
-zsh
 
 # essential cli
 brew_install_if_not_installed git
