@@ -92,7 +92,7 @@ brew_install_if_not_installed mysql
 brew_install_if_not_installed hub
 
 # heavy languages/tools
-cask_install_if_not_installed dotnet
+cask_install_if_not_installed dotnet-sdk
 brew_install_if_not_installed pyenv
 brew_install_if_not_installed rbenv
 brew_install_if_not_installed nodenv
