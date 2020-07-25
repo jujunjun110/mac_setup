@@ -6,16 +6,22 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 choco upgrade chocolatey
 
-choco install -y googlechrome
-choco install -y sublimetext3
-choco install -y dropbox
+# System Tools
 choco install -y git
 choco install -y keyhac
-choco install -y vscode
 choco install -y fluent-terminal
+
+# Utilities
+choco install -y googlechrome
+choco install -y sublimetext3
+choco install -y vscode
+choco install -y zoom
 choco install -y googlejapaneseinput
+choco install -y dropbox
+choco install -y slack
+
+# Heavy Stuffs
 choco install -y steam
 choco install -y blender
 choco install -y unity-hub
-choco install -y zoom
 
