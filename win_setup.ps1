@@ -9,6 +9,7 @@ choco upgrade chocolatey
 # System Tools
 choco install -y git
 choco install -y keyhac
+choco install -y anaconda3
 choco install -y fluent-terminal
 
 # Utilities
