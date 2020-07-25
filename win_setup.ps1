@@ -19,6 +19,7 @@ choco install -y zoom
 choco install -y googlejapaneseinput
 choco install -y dropbox
 choco install -y slack
+choco install -y line
 
 # Heavy Stuffs
 choco install -y steam
