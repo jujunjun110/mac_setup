@@ -1,5 +1,5 @@
 pc	jujunjun110@gmail.com	名詞	
-pc	jun_ito@voyagegroup.com	名詞	
+pc	jun.ito@meson.tokyo	名詞	
 tw	jujunjun110	名詞	
 vg	VOYAGE GROUP	名詞	
 vg	株式会社VOYAGE GROUP	名詞	
@@ -20,4 +20,4 @@ yr	よろしくお願いします	名詞
 yrs	よろしくお願いいたします	名詞	
 あr	ありがとうございます	名詞	
 あrt	ありがとうございました	名詞	
-おs	いつもお世話になっております。VOYAGE GROUPの伊藤です。	名詞	
+おs	お世話になっております。MESONの伊藤です。	名詞	
