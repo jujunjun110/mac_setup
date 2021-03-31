@@ -80,6 +80,8 @@ cask_install_if_not_installed google-chrome
 cask_install_if_not_installed firefox
 cask_install_if_not_installed franz
 cask_install_if_not_installed zoom
+cask_install_if_not_installed microsoft-office
+cask_install_if_not_installed microsoft-teams
 
 # sub cli tools
 brew_install_if_not_installed tree
@@ -103,6 +105,8 @@ cask_install_if_not_installed unity-hub
 cask_install_if_not_installed dropbox
 cask_install_if_not_installed google-drive-file-stream
 cask_install_if_not_installed visual-studio-code
+cask_install_if_not_installed android-studio
+cask_install_if_not_installed android-file-transfer
 
 mas install 497799835 # Xcode
 mas install 539883307 # LINE
