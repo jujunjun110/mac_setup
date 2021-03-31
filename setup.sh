@@ -26,7 +26,7 @@ function cask_install_if_not_installed {
   fi
 
   echo " ------------ $1 ------------"
-  brew cask install $1
+  brew install cask $1
   echo " ------------ END ------------"
 }
 
@@ -79,7 +79,7 @@ cask_install_if_not_installed sublime-text
 cask_install_if_not_installed google-chrome
 cask_install_if_not_installed firefox
 cask_install_if_not_installed franz
-cask_install_if_not_installed zoomus
+cask_install_if_not_installed zoom
 
 # sub cli tools
 brew_install_if_not_installed tree
@@ -111,7 +111,6 @@ mas install 497799835 # Xcode
 mas install 539883307 # LINE
 mas install 409183694 # Keynote
 mas install 668208984 # GIPHY
-mas install 915542151 # Monity
  
 if !(which python | grep -sq shims); then
   pyenv install $(pyenv install -l | grep -v - | tail -1)
