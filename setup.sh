@@ -26,13 +26,13 @@ function cask_install_if_not_installed {
   fi
 
   echo " ------------ $1 ------------"
-  brew cask install $1
+  brew install cask $1
   echo " ------------ END ------------"
 }
 
 if ! command_exists brew ; then
   echo " --------- Homebrew ----------"
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   brew update
   brew upgrade --all --cleanup
   brew -v
@@ -79,7 +79,9 @@ cask_install_if_not_installed sublime-text
 cask_install_if_not_installed google-chrome
 cask_install_if_not_installed firefox
 cask_install_if_not_installed franz
-cask_install_if_not_installed zoomus
+cask_install_if_not_installed zoom
+cask_install_if_not_installed microsoft-office
+cask_install_if_not_installed microsoft-teams
 
 # sub cli tools
 brew_install_if_not_installed tree
@@ -100,18 +102,16 @@ brew_install_if_not_installed goenv
 brew_install_if_not_installed pipenv
 cask_install_if_not_installed blender
 cask_install_if_not_installed unity-hub
-cask_install_if_not_installed sketch
-cask_install_if_not_installed docker
 cask_install_if_not_installed dropbox
-cask_install_if_not_installed pdfelement
 cask_install_if_not_installed google-drive-file-stream
 cask_install_if_not_installed visual-studio-code
+cask_install_if_not_installed android-studio
+cask_install_if_not_installed android-file-transfer
 
 mas install 497799835 # Xcode
 mas install 539883307 # LINE
 mas install 409183694 # Keynote
 mas install 668208984 # GIPHY
-mas install 915542151 # Monity
  
 if !(which python | grep -sq shims); then
   pyenv install $(pyenv install -l | grep -v - | tail -1)
