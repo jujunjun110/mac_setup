@@ -54,7 +54,7 @@ cask "spark-ar-studio"
 cask "sublime-text"
 cask "unity-hub"
 cask "visual-studio-code"
-cask "zoomus"
+cask "zoom"
 
 mas "GIPHY CAPTURE", id: 668208984
 mas "iMovie", id: 408981434

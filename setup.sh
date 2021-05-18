@@ -19,6 +19,7 @@ cp -r $(PWD)/dotfiles/* ~/
 echo zsh > ~/.bash_profile
 
 # Brew Bundle
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew bundle
 
 # Ruby and Python
