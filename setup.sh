@@ -15,7 +15,12 @@ killall Dock
 # Dot Files
 mkdir -p ~/.config/karabiner
 cp $(PWD)/karabiner.json ~/.config/karabiner/karabiner.json
-cp -r $(PWD)/dotfiles/* ~/
+
+cp -r $(PWD)/dotfiles/.vim ~/
+cp $(PWD)/dotfiles/.vimrc ~/
+cp $(PWD)/dotfiles/.zshrc ~/
+cp $(PWD)/dotfiles/.gitconfig ~/
+
 echo zsh > ~/.bash_profile
 
 # Brew Bundle
