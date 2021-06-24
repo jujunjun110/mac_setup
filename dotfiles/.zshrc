@@ -194,14 +194,18 @@ ssh_add_if_exist "$HOME/.ssh/id_rsa"
 # source ~/.cargo/env
 export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
-export PATH="$HOME/.pyenv/bin:$PATH"
 export PATH="$HOME/.goenv/bin:$PATH"
 export PATH="./node_modules/.bin:$PATH"
 
 eval "$(rbenv init -)"
-eval "$(pyenv init -)"
 eval "$(goenv init -)"
 eval "$(nodenv init -)"
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+
+export PYENV_ROOT="$HOME/.pyenv"
+eval "$(pyenv init --path)"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
