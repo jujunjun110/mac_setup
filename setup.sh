@@ -47,6 +47,7 @@ defaults write com.apple.dock autohide -bool false
 defaults write com.apple.dock persistent-apps -array
 defaults write com.apple.dock tilesize -int 50
 defaults write com.apple.dock magnification -bool false
+defaults write com.apple.dock show-recents -bool false
 defaults write com.apple.dock orientation -string "left"
 
 
@@ -64,67 +65,4 @@ cp $(PWD)/karabiner.json ~/.config/karabiner/karabiner.json
 
 echo zsh > ~/.bash_profile
 
-# essential cli
-brew_install_if_not_installed git
-brew_install_if_not_installed mas
-brew_install_if_not_installed zsh
-cask_install_if_not_installed iterm2
-
-# productivity tools
-cask_install_if_not_installed keycastr
-cask_install_if_not_installed karabiner-elements
-cask_install_if_not_installed alfred
-cask_install_if_not_installed bettertouchtool
-cask_install_if_not_installed clipy
-cask_install_if_not_installed google-japanese-ime
-
-# main gui tools
-cask_install_if_not_installed sublime-text
-cask_install_if_not_installed google-chrome
-cask_install_if_not_installed firefox
-cask_install_if_not_installed franz
-cask_install_if_not_installed zoom
-cask_install_if_not_installed microsoft-office
-cask_install_if_not_installed microsoft-teams
-
-# sub cli tools
-brew_install_if_not_installed tree
-brew_install_if_not_installed colordiff
-brew_install_if_not_installed rails
-brew_install_if_not_installed gibo
-brew_install_if_not_installed mono
-brew_install_if_not_installed openssl
-brew_install_if_not_installed mysql
-brew_install_if_not_installed hub
-
-# heavy languages/tools
-cask_install_if_not_installed dotnet-sdk
-brew_install_if_not_installed pyenv
-brew_install_if_not_installed rbenv
-brew_install_if_not_installed nodenv
-brew_install_if_not_installed goenv
-brew_install_if_not_installed pipenv
-cask_install_if_not_installed blender
-cask_install_if_not_installed unity-hub
-cask_install_if_not_installed dropbox
-cask_install_if_not_installed google-drive-file-stream
-cask_install_if_not_installed visual-studio-code
-cask_install_if_not_installed android-studio
-cask_install_if_not_installed android-file-transfer
-
-mas install 497799835 # Xcode
-mas install 539883307 # LINE
-mas install 409183694 # Keynote
-mas install 668208984 # GIPHY
- 
-if !(which python | grep -sq shims); then
-  pyenv install $(pyenv install -l | grep -v - | tail -1)
-  pyenv global $(pyenv install -l | grep -v - | tail -1)
-  pyenv rehash
-fi
-
-if !(which ruby | grep -sq shims); then
-  rbenv install $(rbenv install -l | grep -v - | tail -1)
-  rbenv global $(rbenv install -l | grep -v - | tail -1)
-  rbenv rehash
-fi
+brew bundle install
