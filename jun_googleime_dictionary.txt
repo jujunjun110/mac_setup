@@ -1,5 +1,5 @@
-pc	jujunjun110@gmail.com	名詞	
-pc	jun.ito@meson.tokyo	名詞	
+gm	jujunjun110@gmail.com	名詞	
+gm	jun.ito@meson.tokyo	名詞	
 tw	jujunjun110	名詞	
 vg	VOYAGE GROUP	名詞	
 vg	株式会社VOYAGE GROUP	名詞	
