@@ -33,6 +33,8 @@ function cask_install_if_not_installed {
 if ! command_exists brew ; then
   echo " --------- Homebrew ----------"
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/j-ito/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
   brew update
   brew upgrade --all --cleanup
   brew -v
@@ -40,11 +42,13 @@ if ! command_exists brew ; then
 fi
 
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 defaults write com.apple.dock autohide -bool false
 defaults write com.apple.dock persistent-apps -array
 defaults write com.apple.dock tilesize -int 50
 defaults write com.apple.dock magnification -bool false
 defaults write com.apple.dock orientation -string "left"
+
 
 defaults write -g com.apple.trackpad.scaling 6
 defaults write -g KeyRepeat -int 2
