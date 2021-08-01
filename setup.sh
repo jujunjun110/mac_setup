@@ -29,12 +29,12 @@ defaults write -g InitialKeyRepeat -int 30
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false
 
-echo .DS_Store > ~/.gitignore
 
 cp -r $(PWD)/dotfiles/.vim ~/
 cp $(PWD)/dotfiles/.vimrc ~/
 cp $(PWD)/dotfiles/.zshrc ~/
 cp $(PWD)/dotfiles/.gitconfig ~/
+echo .DS_Store > ~/.gitignore
 
 mkdir -p ~/.config/karabiner
 cp $(PWD)/karabiner.json ~/.config/karabiner/karabiner.json
