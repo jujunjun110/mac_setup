@@ -1,3 +1,4 @@
+# Macのセットアップスクリプト
 function command_exists {
     command -v "$1" > /dev/null;
 }
@@ -38,7 +39,5 @@ echo .DS_Store > ~/.gitignore
 
 mkdir -p ~/.config/karabiner
 cp $(PWD)/karabiner.json ~/.config/karabiner/karabiner.json
-
-echo zsh > ~/.bash_profile
 
 brew bundle install
