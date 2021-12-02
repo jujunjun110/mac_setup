@@ -109,4 +109,4 @@ endif
 set guicursor=a:blinkon0
 
 nnoremap<ESC><ESC> :nohlsearch<CR>
-
+set re=0
