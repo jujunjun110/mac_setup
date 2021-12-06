@@ -16,6 +16,7 @@ alias be='bundle exec'
 alias rb='ruby'
 alias tenki='curl "http://wttr.in/Tokyo?lang=ja"'
 alias diff='colordiff -u'
+alias rider='open -na "Rider.app" --args "$@"'
 #alias crontab='crontab -i'
 
 #alias python='python -B' 
