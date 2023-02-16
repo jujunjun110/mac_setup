@@ -22,15 +22,17 @@ alias rider='open -na "Rider.app" --args "$@"'
 #alias python='python -B' 
 alias uni='/Applications/Unity/Unity.app/Contents/MacOS/Unity -projectPath `pwd` &'
 alias jump='source ~/Dropbox/setting_files/shell_commands/jump.sh'
+alias bb="/Applications/Blender.app/Contents/MacOS/Blender"
 
 umask 022
 ulimit -c 0
 
 export PATH=$PATH:~/Library/Android/sdk/platform-tools/
+export PATH=$PATH:/Applications/Blender.app/Contents/MacOS
 
-export GOROOT=/usr/local/opt/go/libexec
+# export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=$HOME
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+# export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 precmd () {
   echo -ne "\e]2;${PWD}\a"
@@ -206,7 +208,28 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/shims:$PATH"
 eval "$(pyenv init --path)"
+
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+function pdfmin()
+{
+    local cnt=0
+    for i in $@; do
+        gs -sDEVICE=pdfwrite \
+           -dCompatibilityLevel=1.4 \
+           -dPDFSETTINGS=/ebook \
+           -dNOPAUSE -dQUIET -dBATCH \
+           -sOutputFile=${i%%.*}.min.pdf ${i} &
+        (( (cnt += 1) % 4 == 0 )) && wait
+    done
+    wait && return 0
+}
+
+
+export LDFLAGS="-L/opt/homebrew/opt/zlib/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/zlib/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/zlib/lib/pkgconfig"

@@ -1,0 +1,8 @@
+set clipboard=unnamed
+
+map <space> <Action>(AceWordAction)
+set iminsert=0
+
+inoremap <silent> <ESC> <ESC>:set iminsert=2<CR>
+set visualbell
+set noerrorbells
