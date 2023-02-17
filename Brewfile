@@ -51,6 +51,7 @@ cask "sublime-text"
 cask "unity-hub"
 cask "visual-studio-code"
 cask "zoom"
+cask "figma"
 
 mas "GIPHY CAPTURE", id: 668208984
 mas "iMovie", id: 408981434
