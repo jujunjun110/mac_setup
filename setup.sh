@@ -40,4 +40,5 @@ echo .DS_Store > ~/.gitignore
 mkdir -p ~/.config/karabiner
 cp $(PWD)/karabiner.json ~/.config/karabiner/karabiner.json
 
+sudo xcodebuild -license accept
 brew bundle install

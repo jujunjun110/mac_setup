@@ -56,6 +56,5 @@ mas "GIPHY CAPTURE", id: 668208984
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "LINE", id: 539883307
-mas "Monity", id: 915542151
 mas "The Unarchiver", id: 425424353
 mas "Xcode", id: 497799835
