@@ -22,6 +22,7 @@ brew "pyenv"
 brew "rbenv"
 brew "tree"
 brew "wget"
+brew "im-select"
 
 cask "adobe-creative-cloud"
 cask "alfred"
