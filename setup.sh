@@ -32,6 +32,7 @@ defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false
 
 
 cp -r $(PWD)/dotfiles/.vim ~/
+cp -r $(PWD)/dotfiles/.ideavimrc ~/
 cp $(PWD)/dotfiles/.vimrc ~/
 cp $(PWD)/dotfiles/.zshrc ~/
 cp $(PWD)/dotfiles/.gitconfig ~/
