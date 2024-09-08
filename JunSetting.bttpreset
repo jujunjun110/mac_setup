@@ -41,7 +41,7 @@
     "BTTTpFourFingerSwipeSensitivity" : 0.40000000000000002,
     "BSTMoveTreshold" : 2,
     "BTTHideFomControlStripWhenOpen" : false,
-    "BTTNumberOfStarts" : 2613,
+    "BTTNumberOfStarts" : 4622,
     "BTTForceNormalClickPressure3F" : 150,
     "showSiriRemoteTab" : true,
     "SIRIScrollSpeed" : 1,
@@ -123,7 +123,7 @@
     "showOtherTriggersTab" : true,
     "BSTSnapAreaDefaultPictoDistanceFromLeft" : 0.10000000149011612
   },
-  "BTTPresetUUID" : "ED4AC99A-92C2-4CF7-B603-3E1949D01ECC",
+  "BTTPresetUUID" : "B4AA840B-63BF-4AE6-86A3-A90DCA05CE74",
   "BTTPresetContent" : [
     {
       "BTTAppBundleIdentifier" : "com.apple.finder",
@@ -142,6 +142,50 @@
       },
       "BTTTriggers" : [
         {
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 49,
+          "BTTPredefinedActionName" : "アプリケーションを起動 \/ ファイルを開く \/ Apple Scriptを起動…",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/Slack.app\/",
+          "BTTAdditionalConfiguration" : "524320",
+          "BTTEnabled2" : 1,
+          "BTTKeyboardShortcutKeyboardType" : 1789,
+          "BTTRepeatDelay" : 0,
+          "BTTUUID" : "488E71FD-606B-4699-8F87-969B375C0E1D",
+          "BTTTriggerOnDown" : 1,
+          "BTTNotesInsteadOfDescription" : 0,
+          "BTTLayoutIndependentChar" : "2",
+          "BTTEnabled" : 1,
+          "BTTModifierMode" : 0,
+          "BTTShortcutKeyCode" : 19,
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 1,
+          "BTTDisplayOrder" : 0,
+          "BTTAutoAdaptToKeyboardLayout" : 0
+        },
+        {
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 49,
+          "BTTPredefinedActionName" : "アプリケーションを起動 \/ ファイルを開く \/ Apple Scriptを起動…",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/Google%20Chrome.app\/",
+          "BTTAdditionalConfiguration" : "524320",
+          "BTTEnabled2" : 1,
+          "BTTKeyboardShortcutKeyboardType" : 1789,
+          "BTTRepeatDelay" : 0,
+          "BTTUUID" : "1EFB3A02-7F83-4C05-8CDC-2C8F6C5F3042",
+          "BTTTriggerOnDown" : 1,
+          "BTTNotesInsteadOfDescription" : 0,
+          "BTTLayoutIndependentChar" : "\u0000",
+          "BTTEnabled" : 1,
+          "BTTModifierMode" : 0,
+          "BTTShortcutKeyCode" : 18,
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 0,
+          "BTTDisplayOrder" : 0,
+          "BTTAutoAdaptToKeyboardLayout" : 0
+        },
+        {
           "BTTTriggerType" : 1001,
           "BTTTriggerTypeDescription" : "右クリック（修飾キーが必要）",
           "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
@@ -157,6 +201,28 @@
           "BTTModifierMode" : 0,
           "BTTOrder" : 0,
           "BTTDisplayOrder" : 0
+        },
+        {
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 49,
+          "BTTPredefinedActionName" : "アプリケーションを起動 \/ ファイルを開く \/ Apple Scriptを起動…",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/Stack.app\/",
+          "BTTAdditionalConfiguration" : "524320",
+          "BTTEnabled2" : 1,
+          "BTTKeyboardShortcutKeyboardType" : 1789,
+          "BTTRepeatDelay" : 0,
+          "BTTUUID" : "511722A9-2C1C-496A-9F75-45A2087A25BD",
+          "BTTTriggerOnDown" : 1,
+          "BTTNotesInsteadOfDescription" : 0,
+          "BTTLayoutIndependentChar" : "3",
+          "BTTEnabled" : 1,
+          "BTTModifierMode" : 0,
+          "BTTShortcutKeyCode" : 20,
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 2,
+          "BTTDisplayOrder" : 0,
+          "BTTAutoAdaptToKeyboardLayout" : 0
         }
       ]
     }
