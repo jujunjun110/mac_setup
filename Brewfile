@@ -52,3 +52,4 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "The Unarchiver", id: 425424353
 mas "Xcode", id: 497799835
+mas "QuickShade", id: 931571202

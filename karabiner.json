@@ -267,7 +267,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "3",
+                                    "key_code": "8",
                                     "modifiers": {
                                         "mandatory": [
                                             "left_control"
