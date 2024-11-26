@@ -1,10 +1,6 @@
 tap "apenngrace/vulkan"
-tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-versions"
-tap "homebrew/core"
 tap "daipeihust/tap"
-
+tap "homebrew/bundle"
 brew "cask"
 brew "cmake"
 brew "colordiff"
@@ -23,8 +19,7 @@ brew "pyenv"
 brew "rbenv"
 brew "tree"
 brew "wget"
-brew "im-select"
-
+brew "daipeihust/tap/im-select"
 cask "adobe-creative-cloud"
 cask "alfred"
 cask "android-file-transfer"
@@ -35,29 +30,31 @@ cask "clipy"
 cask "docker"
 cask "dotnet-sdk"
 cask "dropbox"
+cask "figma"
 cask "firefox"
 cask "franz"
 cask "google-chrome"
-cask "google-drive-file-stream"
-cask "google-japanese-ime"
 cask "iterm2"
 cask "karabiner-elements"
 cask "keycastr"
+cask "microsoft-auto-update"
 cask "microsoft-office"
 cask "microsoft-teams"
 cask "obs"
 cask "rider"
 cask "sidequest"
+cask "slack"
 cask "spark-ar-studio"
 cask "sublime-text"
 cask "unity-hub"
 cask "visual-studio-code"
 cask "zoom"
-cask "figma"
-
+mas "GarageBand", id: 682658836
 mas "GIPHY CAPTURE", id: 668208984
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "LINE", id: 539883307
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
 mas "The Unarchiver", id: 425424353
 mas "Xcode", id: 497799835
