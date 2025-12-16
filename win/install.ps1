@@ -32,6 +32,17 @@ winget install --id Google.Chrome --exact --accept-source-agreements --accept-pa
 Write-Host "Installing Slack..." -ForegroundColor Cyan
 winget install --id SlackTechnologies.Slack --exact --accept-source-agreements --accept-package-agreements
 
+# Keyboard Customization
+Write-Host "Installing PowerToys..." -ForegroundColor Cyan
+winget install --id Microsoft.PowerToys --exact --accept-source-agreements --accept-package-agreements
+
+Write-Host "Installing Keyhac..." -ForegroundColor Cyan
+winget install --id Craftware.Keyhac --exact --accept-source-agreements --accept-package-agreements
+
+# Mouse Customization
+Write-Host "Installing Logi Options+..." -ForegroundColor Cyan
+winget install --id Logitech.OptionsPlus --exact --accept-source-agreements --accept-package-agreements
+
 # Input Method
 Write-Host "Installing Google Japanese Input..." -ForegroundColor Cyan
 winget install --id Google.JapaneseIME --exact --accept-source-agreements --accept-package-agreements

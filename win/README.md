@@ -16,8 +16,11 @@ cd mac_setup
 # 実行ポリシー設定（初回のみ）
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
-# 実行
+# パッケージインストール
 .\win\install.ps1
+
+# 設定ファイル配置
+.\win\setup_config.ps1
 ```
 
 ## インストールされるもの
@@ -26,6 +29,8 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 - Sublime Text
 - Chrome
 - Slack
+- PowerToys (CapsLock → Right Ctrl)
+- Keyhac (キーボードカスタマイズ)
 - Google日本語入力
 
 ## パッケージ追加
