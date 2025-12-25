@@ -35,6 +35,10 @@ winget install --id Google.Chrome --exact --accept-source-agreements --accept-pa
 Write-Host "Installing Slack..." -ForegroundColor Cyan
 winget install --id SlackTechnologies.Slack --exact --accept-source-agreements --accept-package-agreements
 
+# Productivity
+Write-Host "Installing Microsoft 365..." -ForegroundColor Cyan
+winget install --id Microsoft.Office --exact --accept-source-agreements --accept-package-agreements
+
 # Keyboard Customization
 Write-Host "Installing PowerToys..." -ForegroundColor Cyan
 winget install --id Microsoft.PowerToys --exact --accept-source-agreements --accept-package-agreements
