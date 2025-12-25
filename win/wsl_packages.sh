@@ -10,6 +10,10 @@ echo ""
 echo "Updating package list..."
 apt update
 
+# Install GitHub CLI
+echo "Installing GitHub CLI..."
+apt install -y gh
+
 # Install Docker
 echo "Installing Docker..."
 apt install -y docker.io docker-compose
