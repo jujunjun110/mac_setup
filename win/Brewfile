@@ -1,0 +1,11 @@
+# WSL Brewfile
+# Usage: brew bundle --file=./Brewfile
+
+# Development tools
+brew "gh"           # GitHub CLI
+brew "uv"           # Python package manager (fast, replaces pip/poetry/pyenv)
+
+# Optional: Add more as needed
+# brew "node"
+# brew "tree"
+# brew "wget"

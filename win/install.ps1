@@ -24,8 +24,8 @@ winget install --id Microsoft.VisualStudioCode --exact --accept-source-agreement
 Write-Host "Installing Sublime Text..." -ForegroundColor Cyan
 winget install --id SublimeHQ.SublimeText.4 --exact --accept-source-agreements --accept-package-agreements
 
-Write-Host "Installing GitHub Hub..." -ForegroundColor Cyan
-winget install --id GitHub.hub --exact --accept-source-agreements --accept-package-agreements
+Write-Host "Installing GitHub CLI..." -ForegroundColor Cyan
+winget install --id GitHub.cli --exact --accept-source-agreements --accept-package-agreements
 
 # Browser
 Write-Host "Installing Google Chrome..." -ForegroundColor Cyan
