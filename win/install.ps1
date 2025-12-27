@@ -40,9 +40,6 @@ Write-Host "Installing Microsoft 365..." -ForegroundColor Cyan
 winget install --id Microsoft.Office --exact --accept-source-agreements --accept-package-agreements
 
 # Keyboard Customization
-Write-Host "Installing PowerToys..." -ForegroundColor Cyan
-winget install --id Microsoft.PowerToys --exact --accept-source-agreements --accept-package-agreements
-
 Write-Host "Installing Keyhac..." -ForegroundColor Cyan
 winget install --id Craftware.Keyhac --exact --accept-source-agreements --accept-package-agreements
 

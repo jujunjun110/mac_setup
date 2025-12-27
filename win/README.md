@@ -48,7 +48,6 @@ cd /path/to/mac_setup/win
 - Chrome
 - Slack
 - Microsoft 365
-- PowerToys
 - Keyhac
 - Google日本語入力
 - GitHub CLI (gh)
