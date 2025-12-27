@@ -11,11 +11,15 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 echo "=== Development Tools (Homebrew) ==="
 echo ""
 
-# Check if Homebrew is installed
+# Load Homebrew if not in PATH (for sh execution)
 if ! command -v brew &> /dev/null; then
-    echo "Error: Homebrew is not installed."
-    echo "Run ./install_homebrew.sh first."
-    exit 1
+    if [ -f /home/linuxbrew/.linuxbrew/bin/brew ]; then
+        eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+    else
+        echo "Error: Homebrew is not installed."
+        echo "Run ./install_homebrew.sh first."
+        exit 1
+    fi
 fi
 
 # Update Homebrew
