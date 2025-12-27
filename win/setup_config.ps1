@@ -3,12 +3,12 @@
 Write-Host "=== Configuration Setup Script ===" -ForegroundColor Cyan
 Write-Host ""
 
-$repoRoot = Split-Path -Parent $PSScriptRoot
+$scriptDir = $PSScriptRoot
 
 # Keyhac Configuration
 Write-Host "Setting up Keyhac configuration..." -ForegroundColor Yellow
 $keyhacDir = "$env:USERPROFILE\.keyhac"
-$keyhacConfigSrc = "$repoRoot\keyhac_config.py"
+$keyhacConfigSrc = "$scriptDir\keyhac_config.py"
 $keyhacConfigDst = "$keyhacDir\config.py"
 
 if (Test-Path $keyhacConfigSrc) {
