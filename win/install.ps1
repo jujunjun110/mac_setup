@@ -51,5 +51,12 @@ winget install --id Logitech.OptionsPlus --exact --accept-source-agreements --ac
 Write-Host "Installing Google Japanese Input..." -ForegroundColor Cyan
 winget install --id Google.JapaneseIME --exact --accept-source-agreements --accept-package-agreements
 
+# Design & 3D
+Write-Host "Installing Figma..." -ForegroundColor Cyan
+winget install --id Figma.Figma --exact --accept-source-agreements --accept-package-agreements
+
+Write-Host "Installing Blender..." -ForegroundColor Cyan
+winget install --id BlenderFoundation.Blender --exact --accept-source-agreements --accept-package-agreements
+
 Write-Host ""
 Write-Host "=== Installation Complete ===" -ForegroundColor Green
