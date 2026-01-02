@@ -69,3 +69,9 @@ def configure(keymap):
 
     keymap_global[ "O-235" ] = ime_off
     keymap_global[ "O-236" ] = ime_on
+
+    # Chrome Remote Desktop経由でMacのかな/英数キーを使用
+    # Karabiner側で japanese_kana -> F16, japanese_eisuu -> F17 に変換済み
+    # F16 = 127, F17 = 128 (仮想キーコード)
+    keymap_global[ "(127)" ] = ime_on   # かなキー(F16) -> IME ON
+    keymap_global[ "(128)" ] = ime_off  # 英数キー(F17) -> IME OFF
